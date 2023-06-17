@@ -1,0 +1,56 @@
+@import "../index.scss";
+
+.header-main {
+  display: flex;
+  margin-bottom: 25px;
+}
+.header-right {
+  margin-left: 25px;
+  h3 {
+    font-family: $primary-family;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-items: left;
+    justify-content: space-between;
+    padding-left: 0;
+    gap: 15px;
+    li::before {
+      content: url("../../public/images/folder.svg");
+      position: relative;
+      top: 2px;
+      right: 4px;
+    }
+    li {
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        font-family: $primary-family;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+.main-form {
+  margin-top: 25px;
+  font-family: $primary-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  input {
+    background: rgba(0, 0, 0, 0.04);
+  }
+}
